@@ -20,7 +20,7 @@ const FileDropzone: React.FC<FileDropzoneProps> = ({ onDrop }) => {
       {...getRootProps()}
       className="border border-dashed p-6 rounded-md text-center cursor-pointer"
     >
-      <input {...getInputProps()} />
+      <input aria-label="Upload file" {...getInputProps()} />
       {isDragActive ? <p>Drop the file here...</p> : <p>Drag & drop a file here, or click to select</p>}
     </div>
   );

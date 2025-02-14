@@ -57,6 +57,18 @@ app.get('/api/file/:id/checksum', (req, res) => {
 
 Appropriate error handling ensures invalid requests (missing parameters, invalid tokens) return meaningful error responses.
 
+## Recommendations:
+
+Validate and sanitize all file uploads to prevent malicious files.
+
+Implement rate limiting to prevent abuse of the upload endpoints.
+
+Use security headers (via helmet) to protect against various attack vectors.
+
+Properly handle sensitive data to avoid exposure.
+
+Ensure proper file cleanup after usage.
+
 ## Conclusion
 
 This strategy ensures the security of file uploads by enforcing strict CORS policies, token-based authentication, chunked uploads, and file integrity checks, while also safeguarding against XSS vulnerabilities and unauthorized file deletion.

@@ -50,7 +50,7 @@ This should start the frontend server on http://localhost:5173
 secure-file-dashboard/src/ - Contains the React app powered by Vite and shadcn
 secure-file-dashboard/src/server -  Contains the Mock Express server handling API requests, file uploads, and token authentication.
 
-For Security Documentation please refer the Security.md in the root directory. 
+## For Backend strategy Documentation please refer the Security.md in the root directory. 
 
 ## API Endpoints
 POST /api/upload-chunk
